@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kevin Torres — Senior Full Stack Engineer</title>
+<meta name="description" content="Portafolio de Kevin Torres Pérez · Senior Full Stack Engineer & Analista de Transformación TI. Arquitecturas serverless, plataformas SaaS y clean code." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- progress + cursor -->
+<div class="progress" id="progress"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- ambient particle field -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="#hero" class="brand" data-cursor>
+    <span class="mark">KT</span>
+    <span class="mark-label">Kevin&nbsp;Torres<span class="dim">.dev</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="#about" data-cursor><span class="idx">01</span>Perfil</a>
+    <a href="#projects" data-cursor><span class="idx">02</span>Proyectos</a>
+    <a href="#skills" data-cursor><span class="idx">03</span>Stack</a>
+    <a href="#contact" class="nav-cta" data-cursor>Contacto</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section id="hero" class="section" data-screen-label="Hero">
+  <div class="hero-stage" id="heroStage">
+
+    <!-- fragments (fly outward on disassembly) -->
+    <div class="fragment frag-card" data-frag><span class="k">const</span> arquitecto = <span class="s">"serverless"</span>;</div>
+    <div class="fragment frag-card" data-frag>async <span class="k">deploy</span>(<span class="s">"aws"</span>)</div>
+    <div class="fragment frag-card" data-frag><span class="k">interface</span> CleanCode {}</div>
+    <div class="fragment frag-card" data-frag>SELECT * <span class="k">FROM</span> escala;</div>
+    <div class="fragment frag-chip" data-frag>Microservicios</div>
+    <div class="fragment frag-chip" data-frag>Clean Architecture</div>
+    <div class="fragment frag-chip" data-frag>Scrum Master</div>
+    <div class="fragment frag-chip" data-frag>REST · GraphQL</div>
+    <div class="fragment frag-chip" data-frag>SaaS</div>
+    <div class="fragment frag-glyph round" data-frag></div>
+    <div class="fragment frag-glyph" data-frag></div>
+    <div class="fragment frag-glyph plus" data-frag></div>
+    <div class="fragment frag-glyph round" data-frag></div>
+    <div class="fragment frag-dot" data-frag></div>
+    <div class="fragment frag-dot" data-frag></div>
+    <div class="fragment frag-dot" data-frag></div>
+    <div class="fragment frag-dot" data-frag></div>
+    <div class="fragment frag-dot" data-frag></div>
+    <div class="fragment frag-dot" data-frag></div>
+
+    <div class="hero-center" id="heroCenter">
+      <div class="avatar-intro" id="avatarIntro">
+        <div class="avatar" id="avatar">
+          <div class="ring r2"></div>
+          <div class="ring"></div>
+          <div class="photo-wrap">
+            <img class="photo-base" src="assets/kevin.jpg" alt="Kevin Torres Pérez" />
+            <img class="photo-duo" id="photoDuo" src="assets/kevin-duo.jpg" alt="" aria-hidden="true" />
+            <div class="scan" id="scan"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-text" id="heroText">
+        <h1 class="hero-name">Kevin Torres</h1>
+        <p class="hero-role mono">Senior Full Stack Engineer<span class="sep">·</span>Analista de Transformación TI</p>
+        <p class="hero-sub">Diseño arquitecturas escalables, lidero equipos ágiles y construyo plataformas SaaS desde cero.</p>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint" id="scrollHint">
+    <span>Desplázate para desensamblar</span>
+    <div class="mouse"></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section" data-screen-label="Sobre mí">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <span class="eyebrow">01 — La reconstrucción</span>
+        <p class="about-lead reveal">De la <b>mecatrónica</b> al software: hoy diseño los sistemas que mueven el <b>negocio</b>.</p>
+        <div class="about-body">
+          <p class="reveal">Soy Ingeniero en Mecatrónica reconvertido en <strong>Senior Full Stack Engineer</strong>. Llevo más de 4 años — 3+ como full-stack — construyendo software para el sector bancario, prendario y plataformas SaaS.</p>
+          <p class="reveal">Como <strong>Scrum Master</strong> y analista de transformación TI, lidero equipos multidisciplinarios (Desarrollo, QA, Datos, Infraestructura), uniendo las necesidades del negocio con arquitecturas <strong>serverless</strong> escalables en AWS. Mi obsesión: Clean Architecture, código mantenible y producto que escala.</p>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat"><div class="num"><span class="accent">4+</span> años</div><div class="lbl">Experiencia full-stack & cloud</div></div>
+          <div class="stat"><div class="num">Scrum<span class="accent"> ·</span> Master</div><div class="lbl">Liderazgo de equipos ágiles</div></div>
+          <div class="stat"><div class="num">AWS<span class="accent"> ✦</span></div><div class="lbl">Certified Cloud Practitioner</div></div>
+          <div class="stat"><div class="num">SaaS<span class="accent"> +</span> Banca</div><div class="lbl">Productos en producción</div></div>
+        </div>
+      </div>
+
+      <!-- terminal -->
+      <div class="terminal reveal" id="terminal">
+        <div class="terminal-bar">
+          <div class="dots"><i></i><i></i><i></i></div>
+          <span class="title mono">kevin@portfolio: ~/perfil</span>
+        </div>
+        <div class="terminal-body" id="termBody"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="section" data-screen-label="Proyectos">
+  <div class="wrap projects-head">
+    <div class="row">
+      <div>
+        <span class="eyebrow">02 — Trabajo destacado</span>
+        <h2 class="section-title">Plataformas SaaS<br>en producción.</h2>
+      </div>
+      <div class="count mono">[ 04 proyectos · scroll&nbsp;→ ]</div>
+    </div>
+  </div>
+
+  <div class="h-track-viewport" id="hViewport">
+    <div class="h-track" id="hTrack">
+
+      <!-- Dental Studio -->
+      <article class="proj-card" data-cursor>
+        <div class="proj-visual">
+          <div class="mock">
+            <div class="mock-row"><div class="bar acc" style="width:42%"></div><div class="bar" style="width:24%"></div></div>
+            <div class="teeth"><i></i><i class="f"></i><i></i><i></i><i class="f"></i><i></i><i></i><i></i></div>
+            <div class="teeth"><i></i><i></i><i class="f"></i><i></i><i></i><i class="f"></i><i></i><i></i></div>
+            <div class="mock-row"><div class="mock-tile acc"></div><div class="mock-tile"></div><div class="mock-tile"></div></div>
+            <div class="bar" style="width:60%"></div>
+            <div class="bar" style="width:38%"></div>
+          </div>
+        </div>
+        <div class="proj-meta">
+          <div class="top"><span class="proj-tag">SaaS · Salud</span><span class="proj-num mono">01 / 04</span></div>
+          <h3 class="proj-name">Dental Studio</h3>
+          <p class="proj-desc">Sitio web, agenda en línea y expediente clínico digital para clínicas dentales. Odontograma interactivo de 32 dientes (notación FDI), notas de evolución, consentimientos y métricas — todo en un panel.</p>
+          <div class="proj-stack"><span>Next.js</span><span>Node.js</span><span>PostgreSQL</span><span>Supabase</span><span>Stripe</span></div>
+          <div class="proj-metric">
+            <div class="m"><div class="v">−68%</div><div class="l">no-shows</div></div>
+            <div class="m"><div class="v">20 min</div><div class="l">setup de clínica</div></div>
+            <a class="proj-tag" href="https://dentalstudio-clinica.vercel.app/" target="_blank" rel="noopener" data-cursor style="align-self:center">Ver proyecto ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Barber Studio -->
+      <article class="proj-card" data-cursor>
+        <div class="proj-visual">
+          <div class="mock">
+            <div class="mock-row"><div class="bar acc" style="width:34%"></div><div class="bar" style="width:30%"></div></div>
+            <div class="mock-row"><div class="mock-tile acc"></div><div class="mock-tile"></div></div>
+            <div class="bar" style="width:70%"></div>
+            <div class="mock-row"><div class="mock-tile"></div><div class="mock-tile acc"></div><div class="mock-tile"></div></div>
+            <div class="bar" style="width:46%"></div>
+            <div class="bar" style="width:58%"></div>
+          </div>
+        </div>
+        <div class="proj-meta">
+          <div class="top"><span class="proj-tag">SaaS · Retail</span><span class="proj-num mono">02 / 04</span></div>
+          <h3 class="proj-name">Barber Studio</h3>
+          <p class="proj-desc">El SO de la barbería moderna: "Expediente de Estilo" visual por cliente, agenda con cobro de señas y recordatorios por WhatsApp, y cierre de caja con comisiones 50/50 automáticas.</p>
+          <div class="proj-stack"><span>Next.js</span><span>Supabase</span><span>Stripe</span><span>WhatsApp API</span><span>Vercel</span></div>
+          <div class="proj-metric">
+            <div class="m"><div class="v">−87%</div><div class="l">no-shows</div></div>
+            <div class="m"><div class="v">+40%</div><div class="l">reservas online</div></div>
+            <a class="proj-tag" href="https://barberstudio-app.vercel.app/" target="_blank" rel="noopener" data-cursor style="align-self:center">Ver proyecto ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Los dos compas -->
+      <article class="proj-card" data-cursor>
+        <div class="proj-visual">
+          <div class="mock">
+            <div class="mock-row"><div class="bar acc" style="width:30%"></div><div class="bar" style="width:18%"></div></div>
+            <div class="cal">
+              <i></i><i class="b"></i><i></i><i></i><i class="b"></i><i></i><i></i>
+              <i class="b"></i><i></i><i></i><i class="b"></i><i></i><i></i><i class="b"></i>
+              <i></i><i></i><i class="b"></i><i></i><i></i><i class="b"></i><i></i>
+            </div>
+            <div class="mock-row"><div class="mock-tile"></div><div class="mock-tile acc"></div></div>
+          </div>
+        </div>
+        <div class="proj-meta">
+          <div class="top"><span class="proj-tag">PWA · Comercio</span><span class="proj-num mono">03 / 04</span></div>
+          <h3 class="proj-name">Los dos compas</h3>
+          <p class="proj-desc">App web mobile-first para comercios locales: control de inventarios y ventas, balances de cuentas, seguimiento de deudores y un sistema de recompensas para fidelizar clientes.</p>
+          <div class="proj-stack"><span>React</span><span>PWA</span><span>Node.js</span><span>MongoDB</span><span>Offline-first</span></div>
+          <div class="proj-metric">
+            <div class="m"><div class="v">Mobile</div><div class="l">first · instalable</div></div>
+            <div class="m"><div class="v">Real-time</div><div class="l">inventario + ventas</div></div>
+            <a class="proj-tag" href="https://losdoscompas.vercel.app/" target="_blank" rel="noopener" data-cursor style="align-self:center">Ver proyecto ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Wanashop -->
+      <article class="proj-card" data-cursor>
+        <div class="proj-visual">
+          <div class="mock">
+            <div class="mock-row"><div class="bar acc" style="width:50%"></div></div>
+            <div class="mock-row"><div class="mock-tile"></div><div class="mock-tile"></div><div class="mock-tile acc"></div></div>
+            <div class="mock-row"><div class="mock-tile acc"></div><div class="mock-tile"></div><div class="mock-tile"></div></div>
+            <div class="bar" style="width:64%"></div>
+            <div class="bar" style="width:40%"></div>
+          </div>
+        </div>
+        <div class="proj-meta">
+          <div class="top"><span class="proj-tag">E-commerce · Equipo</span><span class="proj-num mono">04 / 04</span></div>
+          <h3 class="proj-name">Wanashop</h3>
+          <p class="proj-desc">Desarrollo de features productivas en una plataforma de e-commerce a escala. Despliegues por sprint bajo metodología ágil, integraciones y mejoras continuas liberadas directo a producción.</p>
+          <div class="proj-stack"><span>React</span><span>Node.js</span><span>AWS</span><span>CI/CD</span><span>Scrum</span></div>
+          <div class="proj-metric">
+            <div class="m"><div class="v">Sprint</div><div class="l">deploys a producción</div></div>
+            <div class="m"><div class="v">Agile</div><div class="l">features iterativas</div></div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="section" data-screen-label="Stack">
+  <div class="wrap skills-head">
+    <span class="eyebrow" style="justify-content:center;display:inline-flex">03 — El arsenal</span>
+    <h2 class="section-title">Un stack que carga su propio peso.</h2>
+    <p>Sin barras de progreso aburridas. Suelto las herramientas que uso a diario y dejo que la gravedad haga lo suyo — pásales el cursor para empujarlas.</p>
+  </div>
+  <div class="physics-stage" id="physics">
+    <span class="physics-hint mono">mueve el cursor entre los tags ✦ arrástralos</span>
+  </div>
+  <!-- mobile fallback -->
+  <div class="skills-grid" id="skillsGrid"></div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section" data-screen-label="Contacto">
+  <div class="wrap">
+    <span class="eyebrow contact-eyebrow">04 — Hablemos</span>
+    <h1 class="contact-title">¿Construimos<br>algo que <span class="accent">escale</span>?</h1>
+    <div class="contact-mail">
+      <span class="magnetic" data-magnetic>
+        <a class="mail-btn" href="mailto:kevvtorres24@gmail.com" data-cursor>kevvtorres24@gmail.com</a>
+      </span>
+    </div>
+    <div class="socials">
+      <span class="magnetic" data-magnetic><a class="social" href="https://github.com/AlexTorres7" target="_blank" rel="noopener" data-cursor>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.4 9.4 0 0112 6.84c.85 0 1.71.12 2.51.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.02 10.02 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
+        github.com/AlexTorres7</a></span>
+      <span class="magnetic" data-magnetic><a class="social" href="https://www.linkedin.com/in/katorres777/" target="_blank" rel="noopener" data-cursor>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.74v20.5C0 23.2.8 24 1.77 24h20.45c.98 0 1.78-.8 1.78-1.76V1.74C24 .78 23.2 0 22.22 0z"/></svg>
+        in/katorres777</a></span>
+    </div>
+
+    <div class="footer-base">
+      <span class="avail"><i></i>Disponible para proyectos · Mérida, Yucatán 🇲🇽</span>
+      <span>© 2026 Kevin Torres Pérez · Construido con código limpio.</span>
+    </div>
+  </div>
+</section>
+
+<!-- libs -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
