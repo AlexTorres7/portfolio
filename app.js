@@ -256,7 +256,7 @@
 
     const lines = [
       { p: "$", t: "whoami" },
-      { o: "Kevin Torres Pérez — Senior Full Stack Engineer" },
+      { o: "Kevin Torres Perez — Senior Full Stack Engineer" },
       { p: "$", t: "cat stack.json" },
       { o: '{ "cloud": "AWS Serverless", "arch": "Microservicios + DDD" }' },
       { o: '{ "db": ["PostgreSQL", "MongoDB", "DynamoDB"] }' },
