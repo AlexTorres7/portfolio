@@ -129,14 +129,58 @@
       <!-- Dental Studio -->
       <article class="proj-card" data-cursor>
         <div class="proj-visual">
-          <div class="mock">
-            <div class="mock-row"><div class="bar acc" style="width:42%"></div><div class="bar" style="width:24%"></div></div>
-            <div class="teeth"><i></i><i class="f"></i><i></i><i></i><i class="f"></i><i></i><i></i><i></i></div>
-            <div class="teeth"><i></i><i></i><i class="f"></i><i></i><i></i><i class="f"></i><i></i><i></i></div>
-            <div class="mock-row"><div class="mock-tile acc"></div><div class="mock-tile"></div><div class="mock-tile"></div></div>
-            <div class="bar" style="width:60%"></div>
-            <div class="bar" style="width:38%"></div>
-          </div>
+          <svg class="proj-img" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <!-- Background -->
+            <rect width="400" height="300" fill="url(#dentalGrad)"/>
+            <defs>
+              <linearGradient id="dentalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#0a0f1d;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#070b15;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+
+            <!-- Panel header -->
+            <rect x="20" y="20" width="360" height="50" fill="rgba(34,211,238,0.1)" rx="8"/>
+            <text x="35" y="50" font-family="Inter" font-size="16" font-weight="600" fill="#22d3ee">Dental Studio</text>
+
+            <!-- Odontogram (teeth representation) -->
+            <g id="odonto">
+              <text x="35" y="95" font-family="Inter" font-size="12" fill="#aab6c6">Odontograma</text>
+              <g id="teeth-row" transform="translate(35, 110)">
+                <!-- Upper teeth -->
+                <rect x="0" y="0" width="12" height="22" fill="rgba(34,211,238,0.3)" stroke="#22d3ee" stroke-width="1" rx="2"/>
+                <rect x="16" y="0" width="12" height="22" fill="rgba(255,255,255,0.08)" stroke="#6b7689" stroke-width="1" rx="2"/>
+                <rect x="32" y="0" width="12" height="22" fill="rgba(34,211,238,0.3)" stroke="#22d3ee" stroke-width="1" rx="2"/>
+                <rect x="48" y="0" width="12" height="22" fill="rgba(255,255,255,0.08)" stroke="#6b7689" stroke-width="1" rx="2"/>
+                <rect x="64" y="0" width="12" height="22" fill="rgba(34,211,238,0.3)" stroke="#22d3ee" stroke-width="1" rx="2"/>
+                <rect x="80" y="0" width="12" height="22" fill="rgba(255,255,255,0.08)" stroke="#6b7689" stroke-width="1" rx="2"/>
+              </g>
+              <g id="teeth-row-2" transform="translate(35, 145)">
+                <!-- Lower teeth -->
+                <rect x="0" y="0" width="12" height="22" fill="rgba(255,255,255,0.08)" stroke="#6b7689" stroke-width="1" rx="2"/>
+                <rect x="16" y="0" width="12" height="22" fill="rgba(34,211,238,0.3)" stroke="#22d3ee" stroke-width="1" rx="2"/>
+                <rect x="32" y="0" width="12" height="22" fill="rgba(255,255,255,0.08)" stroke="#6b7689" stroke-width="1" rx="2"/>
+                <rect x="48" y="0" width="12" height="22" fill="rgba(34,211,238,0.3)" stroke="#22d3ee" stroke-width="1" rx="2"/>
+                <rect x="64" y="0" width="12" height="22" fill="rgba(255,255,255,0.08)" stroke="#6b7689" stroke-width="1" rx="2"/>
+                <rect x="80" y="0" width="12" height="22" fill="rgba(255,255,255,0.08)" stroke="#6b7689" stroke-width="1" rx="2"/>
+              </g>
+            </g>
+
+            <!-- Stats section -->
+            <g id="stats" transform="translate(35, 190)">
+              <rect width="100" height="50" fill="rgba(34,211,238,0.08)" rx="6"/>
+              <text x="10" y="22" font-family="JetBrains Mono" font-size="14" font-weight="700" fill="#22d3ee">−68%</text>
+              <text x="10" y="40" font-family="Inter" font-size="10" fill="#aab6c6">No-shows</text>
+
+              <rect x="115" y="0" width="100" height="50" fill="rgba(34,211,238,0.08)" rx="6"/>
+              <text x="125" y="22" font-family="JetBrains Mono" font-size="14" font-weight="700" fill="#22d3ee">20 min</text>
+              <text x="125" y="40" font-family="Inter" font-size="10" fill="#aab6c6">Setup</text>
+
+              <rect x="230" y="0" width="100" height="50" fill="rgba(34,211,238,0.08)" rx="6"/>
+              <text x="240" y="22" font-family="JetBrains Mono" font-size="14" font-weight="700" fill="#22d3ee">32</text>
+              <text x="240" y="40" font-family="Inter" font-size="10" fill="#aab6c6">Dientes</text>
+            </g>
+          </svg>
         </div>
         <div class="proj-meta">
           <div class="top"><span class="proj-tag">SaaS · Salud</span><span class="proj-num mono">01 / 04</span></div>
@@ -154,14 +198,42 @@
       <!-- Barber Studio -->
       <article class="proj-card" data-cursor>
         <div class="proj-visual">
-          <div class="mock">
-            <div class="mock-row"><div class="bar acc" style="width:34%"></div><div class="bar" style="width:30%"></div></div>
-            <div class="mock-row"><div class="mock-tile acc"></div><div class="mock-tile"></div></div>
-            <div class="bar" style="width:70%"></div>
-            <div class="mock-row"><div class="mock-tile"></div><div class="mock-tile acc"></div><div class="mock-tile"></div></div>
-            <div class="bar" style="width:46%"></div>
-            <div class="bar" style="width:58%"></div>
-          </div>
+          <svg class="proj-img" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <!-- Background -->
+            <rect width="400" height="300" fill="url(#barberGrad)"/>
+            <defs>
+              <linearGradient id="barberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#0a0f1d;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#070b15;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+
+            <!-- Header with WhatsApp -->
+            <rect x="20" y="20" width="360" height="45" fill="rgba(34,211,238,0.1)" rx="8"/>
+            <circle cx="35" cy="42" r="12" fill="#25D366"/>
+            <text x="52" y="47" font-family="Inter" font-size="13" font-weight="600" fill="#e8eef6">Agenda por WhatsApp</text>
+
+            <!-- Appointment card -->
+            <rect x="20" y="80" width="360" height="70" fill="rgba(34,211,238,0.08)" stroke="rgba(34,211,238,0.3)" stroke-width="1" rx="10"/>
+            <text x="35" y="100" font-family="Inter" font-size="12" fill="#aab6c6">Hoy, martes</text>
+            <text x="35" y="125" font-family="Inter" font-size="16" font-weight="700" fill="#e8eef6">Tomás R.</text>
+            <text x="35" y="140" font-family="JetBrains Mono" font-size="11" fill="#22d3ee">10:00 • Fade + barba</text>
+
+            <!-- Time slots -->
+            <g id="slots" transform="translate(35, 165)">
+              <rect width="100" height="35" fill="rgba(255,255,255,0.04)" rx="6"/>
+              <text x="8" y="16" font-family="JetBrains Mono" font-size="13" font-weight="700" fill="#22d3ee">10:45</text>
+              <text x="8" y="31" font-family="Inter" font-size="9" fill="#aab6c6">Julio M.</text>
+
+              <rect x="115" y="0" width="100" height="35" fill="rgba(255,255,255,0.04)" rx="6"/>
+              <text x="123" y="16" font-family="JetBrains Mono" font-size="13" font-weight="700" fill="#22d3ee">11:30</text>
+              <text x="123" y="31" font-family="Inter" font-size="9" fill="#aab6c6">Bruno A.</text>
+
+              <rect x="230" y="0" width="100" height="35" fill="rgba(34,211,238,0.12)" stroke="rgba(34,211,238,0.3)" stroke-width="1" rx="6"/>
+              <text x="238" y="16" font-family="JetBrains Mono" font-size="13" font-weight="700" fill="#22d3ee">50%</text>
+              <text x="238" y="31" font-family="Inter" font-size="9" fill="#aab6c6">Comisión</text>
+            </g>
+          </svg>
         </div>
         <div class="proj-meta">
           <div class="top"><span class="proj-tag">SaaS · Retail</span><span class="proj-num mono">02 / 04</span></div>
@@ -179,15 +251,55 @@
       <!-- Los dos compas -->
       <article class="proj-card" data-cursor>
         <div class="proj-visual">
-          <div class="mock">
-            <div class="mock-row"><div class="bar acc" style="width:30%"></div><div class="bar" style="width:18%"></div></div>
-            <div class="cal">
-              <i></i><i class="b"></i><i></i><i></i><i class="b"></i><i></i><i></i>
-              <i class="b"></i><i></i><i></i><i class="b"></i><i></i><i></i><i class="b"></i>
-              <i></i><i></i><i class="b"></i><i></i><i></i><i class="b"></i><i></i>
-            </div>
-            <div class="mock-row"><div class="mock-tile"></div><div class="mock-tile acc"></div></div>
-          </div>
+          <svg class="proj-img" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <!-- Background -->
+            <rect width="400" height="300" fill="url(#compasGrad)"/>
+            <defs>
+              <linearGradient id="compasGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#0a0f1d;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#070b15;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+
+            <!-- Title -->
+            <text x="35" y="40" font-family="Inter" font-size="14" font-weight="600" fill="#aab6c6">Ganancia neta</text>
+
+            <!-- Main metric card -->
+            <rect x="20" y="50" width="360" height="65" fill="rgba(218, 171, 61, 0.15)" stroke="rgba(218, 171, 61, 0.4)" stroke-width="1" rx="8"/>
+            <text x="35" y="75" font-family="JetBrains Mono" font-size="28" font-weight="700" fill="#dab73d">$3,569</text>
+            <text x="35" y="105" font-family="Inter" font-size="11" fill="#dab73d">Hoy</text>
+
+            <!-- Income/Expense metrics -->
+            <g id="metrics" transform="translate(35, 135)">
+              <rect width="75" height="45" fill="rgba(34,211,238,0.08)" rx="6"/>
+              <text x="8" y="18" font-family="Inter" font-size="10" fill="#aab6c6">Ingresos</text>
+              <text x="8" y="35" font-family="JetBrains Mono" font-size="14" font-weight="700" fill="#22d3ee">$3.5K</text>
+
+              <rect x="90" y="0" width="75" height="45" fill="rgba(255,255,255,0.04)" rx="6"/>
+              <text x="98" y="18" font-family="Inter" font-size="10" fill="#aab6c6">Egresos</text>
+              <text x="98" y="35" font-family="JetBrains Mono" font-size="14" font-weight="700" fill="#e8eef6">$0</text>
+
+              <rect x="180" y="0" width="75" height="45" fill="rgba(255,255,255,0.04)" rx="6"/>
+              <text x="188" y="18" font-family="Inter" font-size="10" fill="#aab6c6">Vendidas</text>
+              <text x="188" y="35" font-family="JetBrains Mono" font-size="14" font-weight="700" fill="#e8eef6">15</text>
+
+              <rect x="270" y="0" width="55" height="45" fill="rgba(255,255,255,0.04)" rx="6"/>
+              <text x="278" y="18" font-family="Inter" font-size="9" fill="#aab6c6">Deudores</text>
+              <text x="278" y="35" font-family="JetBrains Mono" font-size="14" font-weight="700" fill="#e8eef6">3</text>
+            </g>
+
+            <!-- Mini chart (bar simulation) -->
+            <g id="chart" transform="translate(35, 200)">
+              <text x="0" y="-8" font-family="Inter" font-size="10" fill="#aab6c6">Por día (últimos 7 días)</text>
+              <rect x="0" y="0" width="8" height="20" fill="rgba(218, 171, 61, 0.5)"/>
+              <rect x="12" y="0" width="8" height="14" fill="rgba(218, 171, 61, 0.35)"/>
+              <rect x="24" y="0" width="8" height="18" fill="rgba(218, 171, 61, 0.5)"/>
+              <rect x="36" y="0" width="8" height="10" fill="rgba(218, 171, 61, 0.2)"/>
+              <rect x="48" y="0" width="8" height="22" fill="rgba(218, 171, 61, 0.6)"/>
+              <rect x="60" y="0" width="8" height="16" fill="rgba(218, 171, 61, 0.4)"/>
+              <rect x="72" y="0" width="8" height="25" fill="rgba(218, 171, 61, 0.7)"/>
+            </g>
+          </svg>
         </div>
         <div class="proj-meta">
           <div class="top"><span class="proj-tag">PWA · Comercio</span><span class="proj-num mono">03 / 04</span></div>
@@ -205,13 +317,92 @@
       <!-- Wanashop -->
       <article class="proj-card" data-cursor>
         <div class="proj-visual">
-          <div class="mock">
-            <div class="mock-row"><div class="bar acc" style="width:50%"></div></div>
-            <div class="mock-row"><div class="mock-tile"></div><div class="mock-tile"></div><div class="mock-tile acc"></div></div>
-            <div class="mock-row"><div class="mock-tile acc"></div><div class="mock-tile"></div><div class="mock-tile"></div></div>
-            <div class="bar" style="width:64%"></div>
-            <div class="bar" style="width:40%"></div>
-          </div>
+          <svg class="proj-img" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <!-- Background -->
+            <rect width="400" height="300" fill="url(#wanaGrad)"/>
+            <defs>
+              <linearGradient id="wanaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#0a0f1d;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#070b15;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+
+            <!-- Header -->
+            <rect x="20" y="20" width="360" height="45" fill="rgba(34,211,238,0.1)" rx="8"/>
+            <text x="35" y="50" font-family="Inter" font-size="15" font-weight="600" fill="#22d3ee">E-commerce Scale</text>
+
+            <!-- Product grid preview -->
+            <g id="products" transform="translate(35, 80)">
+              <!-- Product 1 -->
+              <rect width="55" height="60" fill="rgba(34,211,238,0.1)" stroke="rgba(34,211,238,0.2)" stroke-width="1" rx="6"/>
+              <rect x="5" y="5" width="45" height="35" fill="rgba(34,211,238,0.2)" rx="4"/>
+              <text x="8" y="50" font-family="Inter" font-size="9" fill="#aab6c6">Producto</text>
+              <text x="8" y="60" font-family="JetBrains Mono" font-size="10" font-weight="700" fill="#22d3ee">$49.99</text>
+
+              <!-- Product 2 -->
+              <rect x="70" y="0" width="55" height="60" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" rx="6"/>
+              <rect x="75" y="5" width="45" height="35" fill="rgba(255,255,255,0.08)" rx="4"/>
+              <text x="78" y="50" font-family="Inter" font-size="9" fill="#aab6c6">Producto</text>
+              <text x="78" y="60" font-family="JetBrains Mono" font-size="10" font-weight="700" fill="#e8eef6">$39.99</text>
+
+              <!-- Product 3 -->
+              <rect x="140" y="0" width="55" height="60" fill="rgba(34,211,238,0.08)" stroke="rgba(34,211,238,0.3)" stroke-width="1" rx="6"/>
+              <rect x="145" y="5" width="45" height="35" fill="rgba(34,211,238,0.25)" rx="4"/>
+              <text x="148" y="50" font-family="Inter" font-size="9" fill="#aab6c6">Producto</text>
+              <text x="148" y="60" font-family="JetBrains Mono" font-size="10" font-weight="700" fill="#22d3ee">$59.99</text>
+
+              <!-- Product 4 -->
+              <rect x="210" y="0" width="55" height="60" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" rx="6"/>
+              <rect x="215" y="5" width="45" height="35" fill="rgba(255,255,255,0.08)" rx="4"/>
+              <text x="218" y="50" font-family="Inter" font-size="9" fill="#aab6c6">Producto</text>
+              <text x="218" y="60" font-family="JetBrains Mono" font-size="10" font-weight="700" fill="#e8eef6">$44.99</text>
+            </g>
+
+            <!-- CI/CD Pipeline representation -->
+            <g id="pipeline" transform="translate(35, 160)">
+              <text x="0" y="-8" font-family="Inter" font-size="11" color="#aab6c6" fill="#aab6c6">Deploy Pipeline</text>
+
+              <!-- Stage 1 -->
+              <circle cx="15" cy="0" r="6" fill="rgba(34,211,238,0.3)" stroke="#22d3ee" stroke-width="1"/>
+              <text x="10" y="25" font-family="JetBrains Mono" font-size="9" fill="#aab6c6">Code</text>
+
+              <!-- Arrow -->
+              <line x1="25" y1="0" x2="40" y2="0" stroke="rgba(34,211,238,0.2)" stroke-width="1"/>
+
+              <!-- Stage 2 -->
+              <circle cx="50" cy="0" r="6" fill="rgba(34,211,238,0.3)" stroke="#22d3ee" stroke-width="1"/>
+              <text x="42" y="25" font-family="JetBrains Mono" font-size="9" fill="#aab6c6">Test</text>
+
+              <!-- Arrow -->
+              <line x1="60" y1="0" x2="75" y2="0" stroke="rgba(34,211,238,0.2)" stroke-width="1"/>
+
+              <!-- Stage 3 -->
+              <circle cx="85" cy="0" r="6" fill="rgba(34,211,238,0.3)" stroke="#22d3ee" stroke-width="1"/>
+              <text x="77" y="25" font-family="JetBrains Mono" font-size="9" fill="#aab6c6">Build</text>
+
+              <!-- Arrow -->
+              <line x1="95" y1="0" x2="110" y2="0" stroke="rgba(34,211,238,0.2)" stroke-width="1"/>
+
+              <!-- Stage 4 (Deploy) -->
+              <circle cx="120" cy="0" r="6" fill="rgba(34,211,238,0.6)" stroke="#22d3ee" stroke-width="2"/>
+              <text x="110" y="25" font-family="JetBrains Mono" font-size="9" fill="#22d3ee" font-weight="700">Deploy</text>
+            </g>
+
+            <!-- Metrics -->
+            <g id="metrics" transform="translate(35, 220)">
+              <rect width="110" height="50" fill="rgba(34,211,238,0.08)" rx="6"/>
+              <text x="10" y="18" font-family="Inter" font-size="10" fill="#aab6c6">Sprint Deploys</text>
+              <text x="10" y="38" font-family="JetBrains Mono" font-size="16" font-weight="700" fill="#22d3ee">2/wk</text>
+
+              <rect x="125" y="0" width="110" height="50" fill="rgba(34,211,238,0.08)" rx="6"/>
+              <text x="135" y="18" font-family="Inter" font-size="10" fill="#aab6c6">Live Features</text>
+              <text x="135" y="38" font-family="JetBrains Mono" font-size="16" font-weight="700" fill="#22d3ee">12+</text>
+
+              <rect x="250" y="0" width="110" height="50" fill="rgba(34,211,238,0.08)" rx="6"/>
+              <text x="260" y="18" font-family="Inter" font-size="10" fill="#aab6c6">Uptime</text>
+              <text x="260" y="38" font-family="JetBrains Mono" font-size="16" font-weight="700" fill="#22d3ee">99.9%</text>
+            </g>
+          </svg>
         </div>
         <div class="proj-meta">
           <div class="top"><span class="proj-tag">E-commerce · Equipo</span><span class="proj-num mono">04 / 04</span></div>
